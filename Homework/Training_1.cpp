@@ -1227,6 +1227,73 @@ int main() {
 
 
 
+		//				Към момента не сработва!
+	/*
+	int n, theBest=0, classation=0, w=0;
+	bool stop = false;
+	cout << "Въведете N на брой числа, които да се въведат от клавиатурата." << endl;
+	cin >> n;
+	int masiv[n], klasacia[n];
+	cout << "Въведете число №" << w+1 << endl;
+	cin >>masiv[w];
+	theBest=masiv[w];
+	for (int i=1; i<n; i++) {
+		cout << "Въведете число №" << i+1 << endl;
+		cin >> masiv[i];
+		cout << masiv[i] << endl;
+	}
+	cout << "Край на въвеждането." << "Числото N е: " << n << endl;;
+	while (n>classation)
+	{
+		w++;
+		if (theBest<=masiv[w]) {
+			theBest=masiv[w];
+			int b=0;
+				while (masiv[w]>masiv[b] || stop==false) {
+					b++;
+					if (b==n-1) {
+						stop = true;
+					}
+					if (masiv[b]>masiv[w]) {
+						theBest=masiv[b];
+						masiv[b]=0;
+					} else {
+						masiv[w]=0;
+					}
+				}
+				w=0;
+				klasacia[classation]=theBest;
+				classation++;
+				cout << theBest << endl;
+		}
+	}
+	cout << "Класацията на числата е: " << endl;
+	for (int z=0; z<classation; z++) {
+		cout << "Място №" << z+1 << " в класацията е: " << klasacia[z] << endl;
+	}
+
+	*/
+
+
+	/*
+   	int n;
+    	cout << "Въведете N на брой числа, които да се въведат от клавиатурата." << endl;
+   	cin >> n;
+
+    	int masiv[n];
+    	for (int i = 0; i < n; ++i) {
+        	cout << "Въведете число №" << i + 1 << endl;
+        	cin >> masiv[i];
+    	}
+
+    	// Сортиране на числата в низходящ ред
+    
+   	sort(masiv, masiv + n, greater<int>());
+
+    	for (int i = 0; i < n; ++i) {
+        cout << "Място №" << i + 1 << " в класацията на числата е: " << masiv[i] << endl;
+    }
+/*
 
 
 }
